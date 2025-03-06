@@ -657,7 +657,7 @@ This evaluation framework provides a thorough assessment of a Vision Transformer
 
 <div align="center">
   <a href="https://maazsalman.org/">
-    <img width="70" src="click-svgrepo-com.svg" alt="gh" />
+    <img width="70" src="clickMe.svg" alt="gh" />
   </a>
   <p> Explore More! 🚀</p>
 </div>
