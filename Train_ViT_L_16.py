@@ -51,7 +51,7 @@ class ImageClassifier(nn.Module):
 model = ImageClassifier(no_classes, model_name).to(device)
 
 # Define optimizer and loss function
-optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-4)
 criterion = nn.CrossEntropyLoss()
 
 # Define transforms (ViT requires image input size of 224x224)
