@@ -76,6 +76,11 @@ validation_loss_arr = []
 training_acc_arr = []
 validation_acc_arr = []
 
+# Early stopping parameters
+patience = 7
+best_val_loss = float('inf')
+early_stop_counter = 0
+
 for epoch in range(num_epochs):
     # Training loop
     model.train()
