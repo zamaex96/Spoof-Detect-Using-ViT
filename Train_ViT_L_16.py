@@ -53,6 +53,7 @@ model = ImageClassifier(no_classes, model_name).to(device)
 # Define optimizer and loss function
 optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-4)
 criterion = nn.CrossEntropyLoss()
+plateau_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', patience=5, factor=0.5)
 
 # Define transforms (ViT requires image input size of 224x224)
 transform = transforms.Compose([
