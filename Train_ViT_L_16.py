@@ -125,7 +125,7 @@ for epoch in range(num_epochs):
 
     avg_val_loss = total_val_loss / len(validation_dataloader)
     validation_loss_arr.append(avg_val_loss)
-
+    plateau_scheduler.step(avg_val_loss)
     val_accuracy = total_val_correct / total_val_samples * 100
     validation_acc_arr.append(val_accuracy)
 
