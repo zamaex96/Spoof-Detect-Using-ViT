@@ -137,6 +137,17 @@ for epoch in range(num_epochs):
     print(
         f"Epoch {epoch + 1}/{num_epochs}, Train Loss: {avg_train_loss:.4f}, Val Loss: {avg_val_loss:.4f}, Train Acc: {train_accuracy:.2f}%, Val Acc: {val_accuracy:.2f}%")
 
+   # Early stopping check
+    if avg_val_loss < best_val_loss:
+        best_val_loss = avg_val_loss
+        early_stop_counter = 0
+    else:
+        early_stop_counter += 1
+
+    if early_stop_counter >= patience:
+        print(f"Early stopping triggered after {epoch + 1} epochs.")
+        break
+
 # Save the final model
 model_path = os.path.join(output_folder, f"{model_name}_{ext}.pth")
 torch.save({
