@@ -68,9 +68,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # Initialize the Vision Transformer model with the correct number of classes
-model_inference = vit_large_patch16_224(weights=None)  # Load ViT without pretrained weights
+model_inference = create_model("vit_large_patch16_224", pretrained=True)
+
 # Modify the head layer to match your number of classes
-model_inference.heads.head = nn.Linear(model_inference.heads.head.in_features, no_classes)
+model_inference.head = nn.Linear(model_inference.head.in_features, no_classes)
 
 # Load the trained weights
 checkpoint = torch.load(model_path, map_location=device, weights_only=True)
