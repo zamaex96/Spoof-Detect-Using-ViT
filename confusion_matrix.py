@@ -8,6 +8,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
+from timm import create_model
 import random
 from sklearn.metrics import precision_score, recall_score, f1_score
 from datetime import datetime
