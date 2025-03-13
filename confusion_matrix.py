@@ -5,7 +5,6 @@ import os
 import numpy as np
 from sklearn.metrics import confusion_matrix, accuracy_score
 import seaborn as sns
-from torchvision.models import vit_large_patch16_224  # Import ViT model
 import matplotlib.pyplot as plt
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
