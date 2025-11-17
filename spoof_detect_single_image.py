@@ -1,6 +1,4 @@
-# --------------------------------------------------------------
-#  spoof_detect_single_image.py
-# --------------------------------------------------------------
+
 import torch
 import torch.nn as nn
 from torchvision import transforms
