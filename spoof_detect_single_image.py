@@ -23,7 +23,7 @@ IMAGE_FOLDER_PATH = r"C:\SpoofDetect\test_images"   # <-- UPDATE THIS PATH ACCOR
 
 # Model & settings (keep as-is)
 MODEL_PATH = r"C:\SpoofDetect\ML\Models\vit_large_patch16_224_spoofdetect.pth" # <-- UPDATE THIS PATH ACCORDINGLY
-MODEL_NAME = "vit_large_patch16_224"
+MODEL_NAME = "vit_large_patch16_224" 
 NUM_CLASSES = 2
 IMAGE_SIZE = 224
 CLASS_NAMES = ["Real", "Fake"]
