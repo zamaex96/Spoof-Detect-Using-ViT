@@ -22,8 +22,8 @@ import argparse
 IMAGE_FOLDER_PATH = r"C:\SpoofDetect\test_images"   # <-- UPDATE THIS PATH ACCORDINGLY
 
 # Model & settings (keep as-is)
-MODEL_PATH = r"C:\SpoofDetect\ML\Models\vit_large_patch16_224_spoofdetect.pth" # <-- UPDATE THIS PATH ACCORDINGLY
-MODEL_NAME = "vit_large_patch16_224" 
+MODEL_PATH = r"C:\SpoofDetect\ML\Models\mobilenetv2_100_SpoofDetect2.pth" # <-- UPDATE THIS PATH ACCORDINGLY with vit or mobileNEt or resNET etc
+MODEL_NAME = "mobilenetv2_100" # vit or mobileNEt or resNET etc
 NUM_CLASSES = 2
 IMAGE_SIZE = 224
 CLASS_NAMES = ["Real", "Fake"]
