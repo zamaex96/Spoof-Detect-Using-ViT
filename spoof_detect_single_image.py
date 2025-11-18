@@ -132,6 +132,6 @@ def process_folder():
 # ------------------- RUN -------------------
 if __name__ == "__main__":
     print("="*60)
-    print("SPOOF IMAGE DETECTOR (ViT-Large)")
+    print("SPOOF IMAGE DETECTOR (MobileNET)")
     print("="*60)
     process_folder()
