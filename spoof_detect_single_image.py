@@ -13,7 +13,7 @@ import argparse
 # Install all the requirements such as torch, PIL, os, pandas, timm etc
 # 1. Downlaod the models from the repository
 # 2. Insert the correct .pth file address of the model
-# 3. Insert the folder path address where you have saved the image(s)
+# 3. Insert the folder path address where you have saved the test/validation image(s)
 # 4. Run
 
 
